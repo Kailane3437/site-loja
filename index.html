@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Só Importados</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
@@ -16,10 +15,9 @@
             <ul>
                 <li><a href="index.html"><img src="Screenshots/home 1 .png" alt="Home"> Home</a></li>
                 <li><a href="produtos.html"><img src="Screenshots/home 2.png" alt="Produtos"> Produtos</a></li>
-                <li><a href="#ofertas"><img src="Screenshots/home 3.png" alt="Ofertas"> Ofertas</a></li>
+                <li><a href="ofertas.html"><img src="Screenshots/home 3.png" alt="Ofertas"> Ofertas</a></li>
             </ul>
         </nav>
-        
     </header>
 
     <main>
@@ -27,62 +25,74 @@
             <h1>Bem-vindo à Nossa Loja!</h1>
             <p>Encontre as últimas tendências de moda feminina e masculina com preços incríveis.</p>
 
-            <!-- Carrossel -->
+            <!-- Carrossel com Imagens Lado a Lado -->
             <div class="carrossel">
-                <div class="carrossel-imagens">
-                    <img src="imagens/imagem1.jpg" alt="Promoção 1">
-                    <img src="imagens/imagem2.jpg" alt="Promoção 2">
-                    <img src="imagens/imagem3.jpg" alt="Promoção 3">
-                    <img src="imagens/imagem9.jpg" alt="Promoção 3">
-                    <img src="imagens/imagem10.jpg" alt="Promoção 3">
+                <div class="carrossel-inner">
+                    <div class="carrossel-slide">
+                        <img src="imagens/imagem1.jpg" alt="Promoção 1">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="imagens/imagem2.jpg" alt="Promoção 2">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="imagens/imagem3.jpg" alt="Promoção 3">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="imagens/casal1.jpg" alt="Promoção 1">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="imagens/casal3.jpg" alt="Promoção 2">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="imagens/imagem9.jpg" alt="Promoção 4">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="imagens/imagem10.jpg" alt="Promoção 5">
+                    </div>
                 </div>
-                <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
-                <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
+                
             </div>
         </section>
 
         <section id="produtos">
             <h2>Novidades em Moda</h2>
             <div class="produtos-grid">
-                <!-- Produto 1 -->
                 <div class="produto">
                     <img src="imagens/imagem4.jpg" alt="Vestido Floral">
-                    <p>Vestido Floral</p>
+                    <p>Blusa de Algodão</p>
                     <span>R$ 99,90</span>
-                    <a href="produto1.html">Ver Detalhes</a>
                 </div>
-                <!-- Produto 2 -->
                 <div class="produto">
                     <img src="imagens/imagem5.jpg" alt="Saia Jeans">
-                    <p>Saia Jeans</p>
-                    <span>R$ 79,90</span>
-                    <a href="produto2.html">Ver Detalhes</a>
+                    <p>Kit RED</p>
+                    <span>R$ 279,90</span>
                 </div>
-                <!-- Produto 3 -->
                 <div class="produto">
                     <img src="imagens/imagem6.jpg" alt="Blusa de Algodão">
-                    <p>Blusa de Algodão</p>
-                    <span>R$ 59,90</span>
-                    <a href="produto3.html">Ver Detalhes</a>
+                    <p>Blusa Moleton</p>
+                    <span>R$ 159,90</span>
                 </div>
+            </div>
+        </section>
+
+        <!-- Seção do Vídeo -->
+        <section id="video" class="video-section">
+            <h2>Nova coleção em breve!!</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GkO52mZadts?si=QUdLXfeFfehTxFfQ" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
     </main>
 
-       <!-- Vídeo do Produto -->
-<div class="video-produto">
-    <h3>Veja o vestido em ação!</h3>
-    <!-- Incorporação do vídeo do YouTube -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GkO52mZadts?si=VR7VHOG1qWtAwz08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-
+    <footer>
+        <p>&copy; 2025 Minha Loja - Todos os direitos reservados.</p>
+    </footer>
     <footer>
         <p>&copy; 2025 Minha Loja - Todos os direitos reservados.</p>
         <div class="redes-sociais">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="imagens/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
 

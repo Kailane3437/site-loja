@@ -1,22 +1,29 @@
 let indexImagem = 0;
+let slides = document.querySelectorAll(".carrossel-slide");
+let totalSlides = slides.length;
 
 function moverCarrossel(direcao) {
-    const imagens = document.querySelectorAll(".carrossel-imagens img");
-    const totalImagens = imagens.length;
-
-    // Atualiza o índice da imagem
     indexImagem += direcao;
 
-    // Se o índice for menor que 0, vai para a última imagem
     if (indexImagem < 0) {
-        indexImagem = totalImagens - 1;
+        indexImagem = totalSlides - 1;  // Se estiver na primeira imagem, vai para a última
     }
-    // Se o índice for maior ou igual ao número total de imagens, vai para a primeira
-    if (indexImagem >= totalImagens) {
-        indexImagem = 0;
+    if (indexImagem >= totalSlides) {
+        indexImagem = 0;  // Se estiver na última imagem, vai para a primeira
     }
 
-    // Mover o carrossel para a posição correta
-    const carrossel = document.querySelector(".carrossel-imagens");
-    carrossel.style.transform = `translateX(-${indexImagem * 100}%)`;
+    // Atualiza a posição do carrossel para a imagem correta
+    const carrosselInner = document.querySelector(".carrossel-inner");
+    carrosselInner.style.transform = `translateX(-${indexImagem * 100}%)`;
 }
+
+function iniciarCarrosselAutomatico() {
+    setInterval(() => {
+        moverCarrossel(1);  // Passa para a próxima imagem automaticamente
+    }, 3000);  // A cada 3 segundos
+}
+
+// Inicia o carrossel automático quando a página for carregada
+document.addEventListener('DOMContentLoaded', () => {
+    iniciarCarrosselAutomatico();
+});

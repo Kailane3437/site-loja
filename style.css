@@ -50,20 +50,29 @@ header nav ul li a:hover {
 /* Carrossel */
 .carrossel {
     position: relative;
-    max-width: 100%;
-    margin: 30px 0;
+    width: 100%;
+    max-width: 1000px;  /* Ajuste o tamanho do carrossel */
+    margin: 30px auto;
     overflow: hidden;
+    border-radius: 10px;
 }
 
-.carrossel-imagens {
+.carrossel-inner {
     display: flex;
     transition: transform 0.5s ease;
 }
 
-.carrossel-imagens img {
+.carrossel-slide {
+    min-width: 100%;  /* As imagens irão ocupar 100% da largura do contêiner */
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel-slide img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
 }
 
 button {
@@ -76,16 +85,41 @@ button {
     cursor: pointer;
     font-size: 20px;
     z-index: 10;
+    transform: translateY(-50%);
 }
 
 button.prev {
     left: 10px;
-    transform: translateY(-50%);
 }
 
 button.next {
     right: 10px;
-    transform: translateY(-50%);
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #f6f4f0 ;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .redes-sociais {
+    margin-top: 10px;
+}
+
+footer .redes-sociais a {
+    margin: 0 10px;
+}
+
+footer .redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+nav ul li a img {
+    width: 20px;  /* Ajuste o tamanho da imagem */
+    height: auto;
+    margin-right: 8px;
 }
 
 
@@ -203,5 +237,34 @@ nav ul li a img {
     margin-right: 8px;
 }
 
+/* Estilo da Seção de Vídeo */
+#video {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+#video h2 {
+    font-size: 24px;
+    color: #701616;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    max-width: 100%;
+    width: 700px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+h1{
+    color: #7a1414;
+}
 
 

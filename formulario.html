@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+    <link rel="stylesheet" href="formulario.html">
+    <link rel="stylesheet" href="for.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Screenshots/logo.png" alt="Logo da Loja">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="Screenshots/home 1 .png" alt="Home"> Home</a></li>
+                <li><a href="produtos.html"><img src="Screenshots/home 2.png" alt="Produtos"> Produtos</a></li>
+                <li><a href="ofertas.html"><img src="Screenshots/home 3.png" alt="Ofertas"> Ofertas</a></li>
+                <li><a href="formulario.html"><img src="Screenshots/home 3.png" alt="Ofertas">formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Carrossel de Imagens -->
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-images" id="carouselImages">
+                <div class="carousel-slide">
+                    <img src="imga/ban.png" alt="Imagem 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="imga/ban2.png" alt="Imagem 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="imga/ban.png" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-button-left" onclick="prevSlide()"></button>
+            <button class="carousel-button-right" onclick="nextSlide()"></button>
+        </div>
+    </section>
+
+    <!-- Formulário de Compra -->
+    <section id="purchase-form" class="fade-in">
+        <h2>Formulário de Compra</h2>
+        <form id="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+
+            <label for="address">Endereço de Entrega:</label>
+            <input type="text" id="address" name="address" class="form-input" required>
+
+            <label for="payment">Forma de Pagamento:</label>
+            <select id="payment" name="payment" class="form-input">
+                <option value="credit">Cartão de Crédito</option>
+                <option value="debit">Cartão de Débito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <label for="value">Valor:</label>
+            <input type="text" id="value" name="value" class="form-input" required>
+
+            <!-- Botão de Finalizar Cadastro -->
+            <button type="submit" class="btn-submit">Finalizar Cadastro</button>
+        </form>
+    </section>
+
+    <!-- Sobre a Loja -->
+    <section id="about" class="slide-in">
+        <h2>Sobre a Loja</h2>
+        <p>Oferecemos as melhores roupas da moda a preços acessíveis. Venha conferir nossas novidades!</p>
+    </section>
+
+    <br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p>&copy; 2025 Minha Loja - Todos os direitos reservados.</p>
+    </footer>
+
+    <footer>
+        <p>&copy; 2025 Minha Loja - Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="imagens/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

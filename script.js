@@ -27,3 +27,4 @@ function iniciarCarrosselAutomatico() {
 document.addEventListener('DOMContentLoaded', () => {
     iniciarCarrosselAutomatico();
 });
+

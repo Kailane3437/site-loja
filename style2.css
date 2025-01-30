@@ -154,3 +154,28 @@ nav ul li a img {
     height: auto;
     margin-right: 8px;
 }
+
+/* Estilos gerais do botão */
+.botao-compra {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #a02925;
+    color: white;
+}
+
+/* Efeito de hover */
+.botao-compra:hover {
+    background-color: #e79eba;
+    transform: scale(1.05);
+}
+
+/* Efeito de foco */
+.botao-compra:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(211, 146, 7);
+}
